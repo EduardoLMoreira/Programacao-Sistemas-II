@@ -1,0 +1,14 @@
+### Get all vagas
+GET http://localhost:8080/vagas
+
+### Create vaga (associando empresa por id)
+POST http://localhost:8080/vagas
+Content-Type: application/json
+
+{
+  "titulo":"Vaga Teste",
+  "descricao":"Teste",
+  "publicacao":"2025-10-10",
+  "ativo": true,
+  "empresa": { "id": 1 }
+}

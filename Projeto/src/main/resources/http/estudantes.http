@@ -1,0 +1,13 @@
+### Get all estudantes
+GET http://localhost:8080/estudantes
+
+### Create estudante
+POST http://localhost:8080/estudantes
+Content-Type: application/json
+
+{
+  "nome": "Teste Estudante",
+  "email": "teste@email.com",
+  "nascimento": "2001-05-12",
+  "anoIngresso": 2020
+}
